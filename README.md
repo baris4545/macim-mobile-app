@@ -1,50 +1,55 @@
-# Welcome to your Expo app 👋
+# MAÇIM – AstroTurf Match & Player Finder Mobile Application
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+MAÇIM is a mobile application developed as a graduation project.  
+The application aims to bring players, teams, opponents, and AstroTurf fields together on a single platform.
 
-## Get started
+## 📱 Project Description
 
-1. Install dependencies
+MAÇIM allows users to:
+- Find players or teams
+- Create player and match listings
+- Communicate with listing owners via messaging
+- View nearby AstroTurf fields within a 5 km radius
+- Get directions and make reservations for AstroTurf fields
+- Manage their profile, listings, and reservations
 
-   ```bash
-   npm install
-   ```
+The application is designed to simplify the organization of amateur football matches.
 
-2. Start the app
+## 🛠️ Technologies Used
 
-   ```bash
-   npx expo start
-   ```
+### Frontend
+- React Native
+- TypeScript
+- Expo
+- Expo Router
 
-In the output, you'll find options to open the app in a
+### Backend
+- Node.js
+- Express.js
+- SQLite (or your database if different)
+- JWT (JSON Web Token) for authentication
+- bcrypt for password hashing
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### Other Tools
+- Git & GitHub
+- Various artificial intelligence tools were used during the development process
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 🔐 Authentication
 
-## Get a fresh project
+- User registration and login are handled via backend API
+- JWT-based authentication is used
+- Secure password hashing with bcrypt
 
-When you're ready, run:
+## 📂 Project Structure
 
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```txt
+macim/
+│
+├── macim-backend/        # Node.js + Express backend
+│
+├── app/                 # React Native frontend
+│
+├── assets/              # Images and static files
+│
+├── README.md
+└── package.json
